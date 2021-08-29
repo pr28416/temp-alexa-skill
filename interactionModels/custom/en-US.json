@@ -1,0 +1,86 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "final project",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "repeat_thing",
+          "slots": [
+            {
+              "name": "repeat",
+              "type": "String",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "say what i say {repeat}",
+            "repeat {repeat}",
+            "repeat after me {repeat}"
+          ]
+        },
+        {
+          "name": "scratch",
+          "slots": [],
+          "samples": [
+            "show me my scratch notifications",
+            "how many scratch notifications do i have",
+            "what are my scratch notifications"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "one two"
+              }
+            },
+            {
+              "name": {
+                "value": "test"
+              }
+            }
+          ],
+          "name": "String"
+        }
+      ]
+    }
+  },
+  "version": "8"
+}
